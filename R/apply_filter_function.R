@@ -1,4 +1,26 @@
-
+#' Applies the color filter
+#'
+#' Loads the image from th image_path object and converts it into a bitmap and the vector_for_filter
+#' required for the filter functions. Returns a final_image with your applied filter which can
+#' be printed or saved. Uses both the filter function and the convert to bitmap function.
+#'
+#'@param image_path an object to which you have assigned the path or name (if in WD) to the image you want to filter.
+#'@param filter_type choose between the different filter types: "grayscale_filter", "red_filter", "blue_filter", "green_filter", "cutoff_filter" or "custom_filter".
+#'@param RGB = c(255, 0, 255) # Choose three RBG values (0-255) to customize the color if "custom_filter" chosen
+#'@return a filtered image converted back to a bitmap
+#'@examples
+#' # example code
+#'
+#'# Load libraries
+#' library(magick)
+#' # The payth do your image, or name if in the WD
+#' image_path <- "Path/to/your/image_1.jpg"
+#' # Apply the filter of choice
+#' filtered_image <- apply_filter(image_path, "grayscale_filter")
+#' # Will generate an "filtered_image" object which can be printed and saved.
+#' print(filtered_image) # View the final image
+#' image_write(filtered_image, path = "my_image.jpg", format = "jpeg") # Save the final image as a JPEG.
+#'
 
 # Apply the filter
 apply_filter <- function(image_path, filter_type, RGB) {

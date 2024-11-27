@@ -1,7 +1,7 @@
-Package: ImageFilter
+Package: ImageFilterUpdated
 Type: Package
 Title: Applies different image filters to provided images
-Version: 0.1.2
+Version: 0.1.0
 Author: Sabina Enlund
 Maintainer: Sabina Enlund <sabina.enlund@ki.se>
 Description: A package that contains different image filters to apply to you image.
