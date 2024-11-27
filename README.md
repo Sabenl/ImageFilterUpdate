@@ -37,8 +37,8 @@ image_path <- "Test_image_1.jpg"
   ***For cutoff : "cutoff_filter"*** 
   ***For red : "red_filter"***  
   ***For green : "green_filter"*** 
-  ***For blue : "blue_filter"*** 
-  ***For custom color : "custom_filter", RGB = c(155, 0, 155)*** 
+  ***For blue : "blue_filter"***  
+  ***For custom color : "custom_filter", RGB = c(155, 0, 155)***   
   filtered_image <- apply_filter(image_path, filter_type, RGB)   
   
   **View the final image**  
