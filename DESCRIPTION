@@ -1,0 +1,18 @@
+Package: ImageFilter
+Type: Package
+Title: Applies different image filters to provided images
+Version: 0.1.2
+Author: Sabina Enlund
+Maintainer: Sabina Enlund <sabina.enlund@ki.se>
+Description: A package that contains different image filters to apply to you image.
+    Contains four different filters; grayscale, cutoff, red/green/blue and chosen 
+    color based on RBG values. Provide the path to your image and the package will
+    enable you to apply the different filters and save the image to your directory.
+    You need to load your image path to the object "image_path" and load both the 
+    magick and ImageFilter library. Then you can use the provided "apply_filter"
+    functions to generate a filtered image which can then be saved. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: magick
+RoxygenNote: 7.3.2
