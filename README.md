@@ -25,7 +25,7 @@ library(magick)
 
 
 **Load the image**  
-**Assign the path to the image you want to use in the filter (replace with your file path or image name if in the working directory)**  
+**Assign the path to the image you want to use in the filter (replace with your file path or image name if in the working directory)**    
 image_path <- "Test_image_1.jpg"  
 
 
@@ -34,13 +34,20 @@ image_path <- "Test_image_1.jpg"
 
 **Apply filter**  
 ***Filter_type chisen form examples below:
-****For grayscale : "grayscale_filter"
-****For cutoff : "cutoff_filter"
-****For red : "red_filter"
-****For green : "green_filter"
-****For blue : "blue_filter"
-****For custom color : "custom_filter", RGB = c(155, 0, 155)
-filtered_image <- apply_filter(image_path, filter_type, RGB)   
+  
+  ****For grayscale : "grayscale_filter"
+  
+  ****For cutoff : "cutoff_filter"
+  
+  ****For red : "red_filter"
+  
+  ****For green : "green_filter"
+  
+  ****For blue : "blue_filter"
+  
+  ****For custom color : "custom_filter", RGB = c(155, 0, 155)
+  
+  filtered_image <- apply_filter(image_path, filter_type, RGB)   
 **View the final image**  
 print(gray_image)  
 **Save the final image as a JPEG, change path to the name and location desired**  
