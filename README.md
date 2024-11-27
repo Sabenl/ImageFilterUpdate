@@ -33,19 +33,19 @@ image_path <- "Test_image_1.jpg"
 **Assign the filter function to an object to be able to print and save the image**
 
 **Apply filter**  
-***Filter_type chisen form examples below:
+***Filter_type chosen form examples below:
   
-  ****For grayscale : "grayscale_filter"
+  ***For grayscale : "grayscale_filter"
   
-  ****For cutoff : "cutoff_filter"
+  ***For cutoff : "cutoff_filter"
   
-  ****For red : "red_filter"
+  ***For red : "red_filter"
   
-  ****For green : "green_filter"
+  ***For green : "green_filter"
   
-  ****For blue : "blue_filter"
+  ***For blue : "blue_filter"
   
-  ****For custom color : "custom_filter", RGB = c(155, 0, 155)
+  ***For custom color : "custom_filter", RGB = c(155, 0, 155)
   
   filtered_image <- apply_filter(image_path, filter_type, RGB)   
 **View the final image**  
