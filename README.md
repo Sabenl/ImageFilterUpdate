@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Package description
 A package that contains different image filters to apply to you image.
 Contains four different filters; grayscale, cutoff, red/green/blue and chosen 
@@ -25,40 +24,29 @@ library(magick)
 
 
 **Load the image**  
-**Assign the path to the image you want to use in the filter (replace with your file path or image name if in the working directory)**  
+**Assign the path to the image you want to use in the filter (replace with your file path or image name if in the working directory)**    
 image_path <- "Test_image_1.jpg"  
 
 
 **Apply the chosen filter to your image**  
 **Assign the filter function to an object to be able to print and save the image**
 
-**Grayscale filter**  
-gray_image <- apply_grayscale_filter(image_path)   
-**View the final image**  
-print(gray_image)  
-**Save the final image as a JPEG, change path to the name and location desired**  
-image_write(gray_image, path = "gray_image.jpg", format = "jpeg")
-
-**Cutoff filter to the grayscale vector (requires the grayscale filter to have been run first)**  cutoff_image <- apply_cutoff_filter(image_path)  
-**View the final image**  
-print(cutoff_image)  
-**Save the final image as a JPEG, change path to the name and location desired.**  
-image_write(cutoff_image, path = "cutoff_image.jpg", format = "jpeg")
-
-**Red, green or blue filter. Insert color "red", "blue" or "green" and change the output_path name.** 
-color_image <- apply_color_filter(image_path, color = "red")  
-**View the final image**  
-print(color_image) 
-**Save the final image as a JPEG, change path to the name and location desired.**  
-image_write(color_image, path = "color_image.jpg", format = "jpeg")
+**Apply filter**  
+***Filter_type chosen form examples below:***  
+  ***For grayscale : "grayscale_filter"***  
+  ***For cutoff : "cutoff_filter"*** 
+  ***For red : "red_filter"***  
+  ***For green : "green_filter"*** 
+  ***For blue : "blue_filter"***  
+  ***For custom color : "custom_filter", RGB = c(155, 0, 155)***   
+  filtered_image <- apply_filter(image_path, filter_type, RGB)   
   
-**Any color filter, by supplying RGB values (any_color = c(0-255, 0-255, 0-255))**  
-any_color_image <- apply_any_color_filter(image_path, any_color = c(255, 0, 255))  
-**View the final image**  
-print(any_color_image)  
-**Save the final image as a JPEG, change path to the name and location desired.**  
-image_write(any_color_image, path = "any_color_image.jpg", format = "jpeg")
-=======
+  **View the final image**  
+print(filtered_image)  
+  
+  **Save the final image as a JPEG, change path to the name and location desired**  
+image_write(filtered_image, path = "filtered_image.jpg", format = "jpeg")
+
 # ImageFilterUpdate
 Updated version of the imagefilter
->>>>>>> 2caa7ee2fdbf5c2770492039dcc90e15ac0a9ef7
+
