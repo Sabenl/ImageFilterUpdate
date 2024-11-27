@@ -1,7 +1,5 @@
 
 
-
-
 # Apply the filter
 apply_filter <- function(image_path, filter_type, RGB) {
   # Load the image
