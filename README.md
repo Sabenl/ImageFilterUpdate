@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Package description
 A package that contains different image filters to apply to you image.
 Contains four different filters; grayscale, cutoff, red/green/blue and chosen 
@@ -57,3 +58,7 @@ any_color_image <- apply_any_color_filter(image_path, any_color = c(255, 0, 255)
 print(any_color_image)  
 **Save the final image as a JPEG, change path to the name and location desired.**  
 image_write(any_color_image, path = "any_color_image.jpg", format = "jpeg")
+=======
+# ImageFilterUpdate
+Updated version of the imagefilter
+>>>>>>> 2caa7ee2fdbf5c2770492039dcc90e15ac0a9ef7
