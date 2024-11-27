@@ -42,10 +42,10 @@ image_path <- "Test_image_1.jpg"
   filtered_image <- apply_filter(image_path, filter_type, RGB)   
   
   **View the final image**  
-print(gray_image)  
+print(filtered_image)  
   
   **Save the final image as a JPEG, change path to the name and location desired**  
-image_write(gray_image, path = "gray_image.jpg", format = "jpeg")
+image_write(filtered_image, path = "filtered_image.jpg", format = "jpeg")
 
 # ImageFilterUpdate
 Updated version of the imagefilter
